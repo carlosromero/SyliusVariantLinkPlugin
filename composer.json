@@ -12,7 +12,7 @@
     "license": "MIT",
     "require": {
         "php": ">=7.3",
-        "psr/link": "^1.0",
+        "psr/link": "^1.0 || ^2.0",
         "sylius/core": "^1.0",
         "sylius/product": "^1.0",
         "sylius/resource-bundle": "^1.6",
