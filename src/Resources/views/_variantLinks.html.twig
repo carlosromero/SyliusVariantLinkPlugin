@@ -6,9 +6,11 @@
 
 {# @var \Sylius\Component\Core\Model\ProductVariantInterface[] variants #}
 <div id="setono-variant-links" style="display: none">
+  {% if not product.simple %}
     {% for variant in variants %}
         <div {% for optionValue in variant.optionValues %}data-{{ optionValue.optionCode }}="{{ optionValue.code }}" {% endfor %}
              data-value="{{ setono_variant_path(variant) }}"
              data-variant-code="{{ variant.code }}"></div>
     {% endfor %}
+  {% endif %}
 </div>
