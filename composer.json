@@ -17,7 +17,7 @@
         "sylius/product": "^1.0",
         "sylius/resource-bundle": "^1.6",
         "symfony/config": "^4.4 || ^5.0",
-        "symfony/dependency-injection": "^4.4 || ^5.0",
+        "symfony/dependency-injection": "^4.4 || ^5.4.5",
         "symfony/event-dispatcher": "^4.4 || ^5.0",
         "symfony/http-foundation": "^4.4 || ^5.0.7",
         "symfony/http-kernel": "^4.4 || ^5.1.5",
@@ -28,19 +28,25 @@
         "webmozart/assert": "^1.9"
     },
     "require-dev": {
-        "phpspec/phpspec": "^6.1",
+        "phpspec/phpspec": "^7.2",
         "phpunit/phpunit": "^8.5",
         "roave/security-advisories": "dev-master",
         "setono/code-quality-pack": "^1.4",
-        "setono/sylius-behat-pack": "^0.1",
-        "sylius/sylius": "~1.7.0 || ~1.10.0",
+        "setono/sylius-behat-pack": "^0.2",
+        "sylius/sylius": "~1.7.0 || ~1.10",
         "symfony/debug-bundle": "^5.0",
         "symfony/dotenv": "^5.0",
         "symfony/intl": "^4.4 || ^5.0",
         "symfony/web-profiler-bundle": "^5.0"
     },
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "allow-plugins": {
+            "phpstan/extension-installer": true,
+            "ergebnis/composer-normalize": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "symfony/thanks": true
+        }
     },
     "extra": {
         "branch-alias": {
