@@ -1,0 +1,4 @@
+lexik_jwt_authentication:
+    secret_key: 'sdfsdfdsfdsf'
+    public_key: 'sadfdsfdsf'
+    pass_phrase: 'asdfsdfsdfsdf'
